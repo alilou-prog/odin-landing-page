@@ -1,18 +1,24 @@
 * {
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     display: flex;
     flex-direction: column;
 }
-#section2, #section3, #section4, footer{
+
+#section2,
+#section3,
+#section4,
+footer {
     margin-top: 20px;
 }
 
 
-header, #section1, footer {
+header,
+#section1,
+footer {
     background-color: #1F2937;
 }
 
@@ -20,9 +26,10 @@ header {
     display: flex;
     gap: 8px;
     align-items: flex-start;
+    padding: 8px;
 }
 
-header :first-child{
+header :first-child {
     margin-right: auto;
 }
 
@@ -44,12 +51,7 @@ header :first-child{
 
 #section1 {
     display: flex;
-}
-
-#section1 div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 8px;
 }
 
 #section1 img {
@@ -68,16 +70,9 @@ header :first-child{
     align-items: center;
 }
 
-#section2 div {
+#section2 .container {
     display: flex;
     gap: 10px;
-}
-
-#section2 div :first-child {
-    margin-left: auto;
-}
-#section2 div :last-child {
-    margin-right: auto;
 }
 
 .img-label {
@@ -100,14 +95,16 @@ header :first-child{
     background-color: #E5E7EB;
     font-size: 36px;
     color: #1F2937;
-    font-style:italic;
+    font-style: italic;
 }
+
 #section3 .author {
     text-align: end;
     font-weight: 800;
 }
+
 #section3 p {
-    margin: 0 30%;
+    margin: 30%;
 }
 
 /* section4 */
@@ -120,11 +117,6 @@ header :first-child{
     color: white;
 }
 
-#section4 div {
-    display: flex;
-    flex-direction: column;
-}
-
 /* footer */
 footer {
     background-color: #1F2937;
@@ -132,4 +124,3 @@ footer {
     font-size: 18px;
     text-align: center;
 }
-
